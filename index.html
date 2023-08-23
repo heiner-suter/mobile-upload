@@ -7,7 +7,17 @@
   </head>
   <body>
     <h1>Please upload your document here</h1>
+
     <input id="fileInput" type="file" style="display: none" />
     <button onclick="fileInput.click()">Select a file for upload</button>
+
+    <input
+      id="cameraInput"
+      type="file"
+      accept="image/*"
+      capture="environment"
+      style="display: none"
+    />
+    <button onclick="cameraInput.click()">Take a picture to upload</button>
   </body>
 </html>
