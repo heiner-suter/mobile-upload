@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>myOBT mobile upload</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
   </head>
-  <body>
+  <body style="padding: 8px">
     <h1>Please upload your document here</h1>
 
-    <input id="fileInput" type="file" style="display: none" />
-    <button onclick="fileInput.click()">Select a file for upload</button>
+    <div>
+      <input id="fileInput" type="file" style="display: none" />
+      <button
+        onclick="fileInput.click()"
+        class="btn btn-block btn-primary"
+        style="margin-top: 2rem"
+      >
+        Select a file to upload
+      </button>
+    </div>
 
-    <input
-      id="cameraInput"
-      type="file"
-      accept="image/*"
-      capture="environment"
-      style="display: none"
-    />
-    <button onclick="cameraInput.click()">Take a picture to upload</button>
+    <div>
+      <input
+        id="cameraInput"
+        type="file"
+        accept="image/*"
+        capture="environment"
+        style="display: none"
+      />
+      <button
+        onclick="cameraInput.click()"
+        class="btn btn-block btn-primary"
+        style="margin-top: 2rem"
+      >
+        Take a picture to upload
+      </button>
+    </div>
   </body>
 </html>
